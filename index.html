@@ -15,10 +15,15 @@
     <link rel="stylesheet" type="text/css" href="css/nav.css">
 </head>
 <body>
+    <!-- conteiner que compoem todo site dentro   -->
     <div id="conteiner">
+
+        <!-- cabecalho do site -->
         <header>
             <h1><em>Tree</em>of Destiny</h1>
         </header>
+
+        <!-- menu do site, o menu pode mudar dependendo da resolucao -->
         <div class="nav-toggle"></div>
             <div class="nav-toggle-bar "></div>
         <div class="nav-toggle-bar"></div>
@@ -36,6 +41,7 @@
                         <li><a class="link_menu" href="#">Meu Perfil</a></li>
                         <li><a class="link_menu" href="#">Login</a></li>
                         <li><a class="link_menu" href="#">Criar Conta</a></li>
+                        <li><a class="link_menu" href="#">Sair</a></li>
                     </ul> 
                 </li>
 
@@ -74,16 +80,17 @@
                     </ul>
                 </li>
 
-                <li><a class="link_menu" href="#">Loja</a></li>
+                <li><a class="link_menu" href="slider.html">Loja</a></li>
                 <li><a class="link_menu" href="#">Sobre nós</a></li>
                 <li><a class="link_menu" href="#">Fórum</a></li>
-
             </ul>
         </nav>
 
+        <!-- conteudo principal do site -->
         <main>
                 <section><h3>Melhores Novidades</h3></section>
                 <hr>
+                <!-- slideshow, muda as img ao click nos span abaixo -->
                 <div class="slideshow-container">
 
 					<div class="mySlides fade">
@@ -113,56 +120,113 @@
 					  <span class="dot" onclick="currentSlide(3)"></span> 
 				</div>
         </main>
-
-        <aside class="aside_top">
+        <!-- status do servidor do game no momento n possue, a informacao e ficticia -->
+        <aside class="aside_stats">
             <section><h3>Mundos</h3></section>
             <hr>
+            <div>
+                <h4>Mundo 01<em style="color:green;">On</em></h4>
+                <h4>Mundo 02<em style="color: red;">Off</em></h4>
+                <h4>Mundo 03<em style="color: orange;">Off</em></h4>
+
+            </div>
         </aside>
-        <aside class="aside_bot">
+        <!-- mostra o rank de top players em ordem decresente atraves do parametro Level por equanto esta estatico, mudaram quando o site estiver dinamico -->
+        <aside class="aside_rank">
             <section>
-                <h3>Ranking</h3>
-                <h4>Level</h4>
-                <ol>
-                    <dl>
-                    <dt class="rank">Nome</dt>
-                    <dt class="rank">Level</dt>
+                <h3>Top Players</h3>
+                <table class="ranking_aside">
+                    <thead>
+                        <tr class="top_table">
+                            <th>Nome</th>
+                            <th class="lvl_aside">Level</th>
+                        </tr>
+                    </thead>
 
-                        <li>Lucas Sena Melo</li>
-                        <dd>1040</dd>
-
-                        <li>Lucas</li>
-                        <dd>1040</dd>
-
-                        <li>Lucas</li>
-                        <dd>1040</dd>
-
-                        <li>Lucas</li>
-                        <dd>1040</dd>
-
-                        <li>Lucas</li>
-                        <dd>1040</dd>
-
-                        <li>Lucas</li>
-                        <dd>1040</dd>
-
-                        <li>Lucas</li>
-                        <dd>1040</dd>
-
-                        <li>Lucas</li>
-                        <dd>1040</dd>
-
-                        <li>Lucas</li>
-                        <dd>1040</dd>
-
-                        <li>Lucas</li>
-                        <dd>1040</dd>
-                    </dl>
-                </ol>
+                    <tbody>
+                        <tr>
+                            <td>1. Lucas Sena Melo</td>
+                            <td class="lvl_aside">100</td>
+                        </tr>
+                        <tr>
+                            <td>2. Giovanna Keszek</td>
+                            <td class="lvl_aside">100</td>
+                        </tr>
+                        <tr>
+                            <td>3. Guilherme Alves</td>
+                            <td class="lvl_aside">100</td>
+                        </tr>
+                        <tr>
+                            <td>4. Lucas Sena</td>
+                            <td class="lvl_aside">99</td>
+                        </tr>
+                        <tr>
+                            <td>5. Lucas Sena</td>
+                            <td class="lvl_aside">98</td>
+                        </tr>
+                        <tr>
+                            <td>6. Lucas Sena</td>
+                            <td class="lvl_aside">98</td>
+                        </tr>
+                        
+                        <tr>
+                                <td>7. Lucas Sena</td>
+                                <td class="lvl_aside">97</td>
+                        </tr>
+                        
+                        <tr>
+                            <td>8. Lucas Sena</td>
+                            <td class="lvl_aside">96</td>
+                        </tr>
+                        <tr>
+                            <td>9. Lucas Sena</td>
+                            <td class="lvl_aside">95</td>
+                        </tr>
+                        <tr>
+                            <td>10. Lucas Sena</td>
+                            <td class="lvl_aside">94</td>
+                        </tr>
+                    </tbody>
+                </table>
             </section>
-            <hr>
         </aside>
-        <footer>
 
+        <!-- contem feed das novas atualizações -->
+        <aside class="aside_news">
+            <section>
+                <h3>Ultimas novidades</h3>
+                <hr>
+            </section>
+        </aside>
+        
+        <!-- rodape do site -->
+        <footer>
+            <div class="redes_sociais">
+                <h3>Siga-nos nas redes sociais</h3>
+                <ul>
+                    <li style="padding-left: 0;">
+                        <a target="blank" href="#">
+                            <div class="test-shine"><img src="img/facebook_logo.png"></div>
+                        </a>
+                    </li>
+                    <li>
+                        <a target="blank" href="">
+                            <div class="test-shine"><img src="img/youtube_logo.png"></div>
+                        </a>
+                    </li>
+                    <li>
+                        <a target="blank" href="">
+                            <div class="test-shine"><img src="img/instagram_logo.png"></div>
+                        </a>
+                    </li>
+                    <li style="padding-right: 0;">
+                        <a target="blank" href="">
+                            <div class="test-shine"><img src="img/twitter_logo.png"></div>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+            <h2>Sena Games</h2>
         </footer>
     </div>
     <script type="text/javascript" src="js/script.js"></script>

@@ -140,9 +140,9 @@ a:after {
 html{height: 100%;}
 
 body{
-	height: 100%;
+	height: 100% ;
 	width: 100%;
-	background-image: url(/img/fundo.png);
+	background-image: url(/img/fundo_saturado.png);
 	background-size: cover;
 	background-repeat: no-repeat;
 	background-attachment: fixed;
@@ -153,7 +153,7 @@ body{
 	word-wrap:break-word !important;
 }
 
-div#conteiner{
+#conteiner{
 	width: 100%;
 	max-width: 1920px;
 	margin: auto;
@@ -168,8 +168,8 @@ header{
 }
 
 header h1 {
-	font-family: Monotype Corsiva, arial, sans-serif;
-	font-size: 48pt;
+	font-family: 'Monotype Corsiva', arial, sans-serif;
+	font-size: 3.8rem;
 	width: 40%;
 	color:#ffb300;
 	margin: auto;
@@ -190,11 +190,12 @@ main, aside, footer{
 	margin: 0.5% 0.5% 0.5% 0.5%;
 	padding: 0.5%;
 	display: inline-block;
+	border-radius: 2%;
 }
 main{
 	float: left;
 	width: 67.8%;
-	height: 40vmax;
+	min-height: 1vmax;
 }
 
 .mySlides {
@@ -212,38 +213,24 @@ main{
 	  margin: auto;
 	  width: 100%;
 	  height: 500px;
-	  position: absolute;
 	  vertical-align: middle;
   }
   
   main div.slideshow-container div.mySlides{
 	  width: 100%;
-	  height: 500px;
+	  height: max-content;
 	  margin: auto;
-	  position: absolute;
+	  border: 2px solid rgba(255, 255, 255, 0.178);
 	  display: none;
   }
-  main div.slideshow-container div.mySlides img{
+main div.slideshow-container div.mySlides img{
 	  margin: auto;
-	  width: 100%;
 	  height: 580px;
-	  position: absolute;
+	  width: 100%;
 	  vertical-align: middle;
   }
   
-  main div.mySlides div.text{
-	  color: #CCF2FA;
-	  font-size: 18pt;
-	  background-color: rgba(0,0,0,0.8);
-	  width: 25%;
-	  text-align: center;
-	  position: absolute;
-		  left: 70%;
-		  top: 80%;
-	  padding: 1%
-  }
-  
-  main span.dot {
+main span.dot {
 	  cursor: pointer;
 	  height: 20px;
 	  width: 20px;
@@ -252,9 +239,8 @@ main{
 	  border-radius: 50%;
 	  display: inline-block;
 	  position: relative;
-		  top: 480px;
 		transition: background-color 0.6s ease;
-  }
+}
   
   main span.active, main span.dot:hover {
 	  background-color: #373737;
@@ -263,21 +249,28 @@ main{
   main span{
 	  border: 1px solid black;
   }
-  
-  main a.next img{
-	  left: 78.5%;
-  }
-  
-  .tipo {
+
+div.text{
+	color: #CCF2FA;
+	background-color: rgba(0,0,0,0.8);
+	width: 27%;
+	text-align: center;
+	position: absolute;
+		left: 70%;
+		top: 80%;
+	padding: 1%
+}
+
+.tipo {
 	  color: #FFB300;
-	  font-size: 1.8rem;
+	  font-size: 1.5rem;
 	  background-color: black;
 	  width: 26%;
-	  height: 60px;
+	  height: 3.2vmax;
 	  text-align: center;
 	  position: absolute;
 	  z-index: 1;
-	  padding: 0.5%;
+	  padding: 0.8%;
   }
   
   /* Fading animation */
@@ -288,7 +281,7 @@ main{
 	animation-duration: 1.5s;
   }
   
-  @-webkit-keyframes fade {
+  @keyframes fade {
 	from {opacity: .4} 
 	to {opacity: 1}
   }
@@ -297,36 +290,172 @@ main{
   @media only screen and (max-width: 300px) {
 	.prev, .next,.text {font-size: 11px}
   }
-  
-  main fieldset#login{
-	  border: 4px double white;
-	  margin: auto;
-	  width: 90%;
-	  height: 450px;
-	  padding: 2%;
-	  box-sizing: border-box;
-	  font-weight: normal;
-  }
-  /*Fim.padrão*/
 
-.aside_top{
-	width: 30.2%;;
-	height: 20vmax;
+.aside_stats{
+	width: 20.2%;
+	min-height: 1vmax;
+	margin: 0 5%;
+	border-bottom: none;
+	border-bottom-left-radius: 0;
+	border-bottom-right-radius: 0;
 }
 
-.aside_bot{
+.aside_stats div{
+	width: 100%;
+	height: max-content;
+}
+
+.aside_stats h4{
+	width: 100%;
+	margin: 2% auto;
+	padding: 2% 0;
+}
+
+.aside_stats h4 em{
+	margin-left: 5%;
+}
+
+.aside_rank{
 	width: 30.2%;
-	height: 18.8vmax;
+	margin-top: 0;
 }
 
-.rank{
-	color: #ffb300;
-	font-size: 1.2rem;
-	text-align: center;
+.ranking_aside {
+	border-collapse: collapse;
+	width: 100%;
+  }
+  
+  .ranking_aside th{
+	  color: #ffb300;
+	  text-align: left;
+	  padding: 2%;
+  }
+  
+  .lvl_aside{
+	  text-align: right !important;
+  }
+  
+  .ranking_aside td{
+	  padding: 2%;
+	  text-align: left;
+	  border-bottom: 1px solid #ddd;
+  }
+  
+  .ranking_aside td:hover{
+	  border-bottom: none;
+  }
+  
+  .ranking_aside tr:hover {
+	  background: #fff;
+	  color: #ffb300;
+	  border-bottom: 6px solid #ffb300;
+	  cursor: pointer;
+	  -webkit-transition: all .2s ease-out;
+	  -moz-transition: all .2s ease-out;
+	  -o-transition: all .2s ease-out;
+	  -ms-transition: all .2s ease-out;
+	  transition: all .2s ease-out;
+  }
+  .ranking_aside tr:active{
+	  background-color: #ddd;
+  }
 
+.top_table:hover{
+	  cursor: default !important;
+	  background: none !important;
+	  border: none !important;
+}
+  
+.top_table:active{
+	  background: none !important;
+	  border: none !important;
+  }
+
+.aside_news{
+	width: 99%;
+	min-height: 1vmax;
 }
 
 footer{
 	width: 99%;
-	height: 20vmax;
+	min-height: 1vmax;
+}
+
+footer h2{
+	text-align: right;
+	font-size: 4.2rem;
+	color: #ffb300;
+	margin: 1.5% 1.5% 0 0;
+}
+
+.redes_sociais{
+	float: left;
+	min-height: 130px;
+}
+
+.redes_sociais h3{
+	font-size: 1.4rem;
+	color: #ffb300;
+	text-align: center;
+	margin: 0 10%;
+	width: 100%;
+}
+
+.redes_sociais ul{
+	list-style-type: none;
+}
+
+.redes_sociais li{
+	float: left;
+	padding: 15px 60px;
+}
+
+.redes_sociais li a img{
+	width: 100%;
+	height: 100%;
+	border-radius: 50%;
+	cursor: pointer;
+}
+
+.test-shine {
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  border: 1px solid black;
+  position:absolute;
+  overflow: hidden;
+}
+
+.test-shine:after{
+  content: "";
+  position: absolute;
+    top: -50%;
+  left: -60%;
+  width: 20%;
+  height: 200%;
+  opacity: 0;
+  transform: rotate(30deg);
+
+  background: rgba(255, 255, 255, 0.13);
+  background: linear-gradient(
+    to right,
+    rgba(255, 255, 255, 0.13) 0%,
+    rgba(255, 255, 255, 0.13) 77%,
+    rgba(255, 255, 255, 0.5) 92%,
+    rgba(255, 255, 255, 0.0) 100%
+  );
+}
+
+/* Hover state - trigger effect */
+.test-shine:hover:after{
+  opacity: 1;
+  left: 130%;
+  transition-property: left, top, opacity;
+  transition-duration: 0.7s, 0.7s, 0.15s;
+  transition-timing-function: ease;
+}
+
+/* Active state */
+.test-shine:active:after {
+  opacity: 0;
 }

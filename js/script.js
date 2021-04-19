@@ -1,3 +1,5 @@
+// slideshow
+// criando variaveis e atrbuindo valor
 var slideIndex = 1;
 showSlides(slideIndex);
 
@@ -8,7 +10,7 @@ function plusSlides(n) {
 function currentSlide(n) {
   showSlides(slideIndex = n);
 }
-
+// funcao de troca de slides
 function showSlides(n) {
   var i;
   var slides = document.getElementsByClassName("mySlides");
@@ -23,13 +25,4 @@ function showSlides(n) {
   }
   slides[slideIndex-1].style.display = "block";  
   dots[slideIndex-1].className += " active";
-}
-
-function myFunction() {
-    var x = document.getElementById("myTopnav");
-    if (x.className === "topnav") {
-        x.className += " responsive";
-    } else {
-        x.className = "topnav";
-    }
 }
