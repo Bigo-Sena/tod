@@ -54,12 +54,8 @@ label {
   letter-spacing: 0.05em;
   color: #FBB300;
 }
-/**
-* Translate down and scale the label up to cover the placeholder,
-* when following an input (with placeholder-shown support).
-* Also make sure the label is only on one row, at max 2/3rds of the
-* field—to make sure it scales properly and doesn't wrap.
-*/
+/* Traduzir para baixo e dimensionar o rótulo para cobrir o espaço reservado, ao seguir uma entrada (com suporte mostrado no espaço reservado).
+Certifique-se também de que o rótulo está em apenas uma linha, no máximo 2/3 do campo - para garantir que ele seja dimensionado corretamente e não quebre. */
 input:placeholder-shown + label {
   cursor: text;
   max-width: 66.66%;
@@ -69,33 +65,24 @@ input:placeholder-shown + label {
   transform-origin: left bottom;
   transform: translate(0, 18px) scale(1);
 }
-/**
-* By default, the placeholder should be transparent. Also, it should 
-* inherit the transition.
-*/
+/* Por padrão, o espaço reservado deve ser transparente. Além disso, deveria herdar a transição. */
 ::-webkit-input-placeholder {
   opacity: 0;
   transition: inherit;
   color: #ccf2fa;
 }
-/**
-* Show the placeholder when the input is focused.
-*/
+/* Mostre o espaço reservado quando a entrada estiver em foco. */
 input:focus::-webkit-input-placeholder {
   opacity: 1;
 }
-/**
-* When the element is focused, remove the label transform.
-* Also, do this when the placeholder is _not_ shown, i.e. when 
-* there's something in the input at all.
-*/
+/* Quando o elemento estiver em foco, remova a transformação do rótulo. Além disso, faça isso quando o marcador _não_ for mostrado, ou seja, quando há algo na entrada. */
 input:not(:placeholder-shown) + label,
 input:focus + label {
   transform: translate(0, 0) scale(1);
   cursor: pointer;
 }
 
-/* Ripple effect */
+/* Efeito cascata */
 .ripple {
 	background-position: center;
 	transition: background 0.8s;
@@ -137,6 +124,8 @@ a:after {
   background: transparent;
 }
 
+/* Estrutura principal da pagina */
+
 html{height: 100%;}
 
 body{
@@ -159,7 +148,7 @@ body{
 	margin: auto;
 }
 
-/* Estrutura principal da pagina */
+/* Cabeçalho da página */
 
 header{
 	width: 100%;
@@ -202,7 +191,7 @@ main{
 	display: none;
 }
 
-/* Slideshow container */
+/* Slideshow cx */
 .slideshow-container {
 	max-width: 1200px;
 	position: relative;
@@ -273,7 +262,7 @@ div.text{
 	  padding: 0.8%;
   }
   
-  /* Fading animation */
+  /* Animação de desvanecimento */
   .fade {
 	-webkit-animation-name: fade;
 	-webkit-animation-duration: 1.5s;
@@ -286,65 +275,68 @@ div.text{
 	to {opacity: 1}
   }
   
-  /* On smaller screens, decrease text size */
+  /* Em telas menores, diminua o tamanho do texto */
   @media only screen and (max-width: 300px) {
 	.prev, .next,.text {font-size: 11px}
   }
 
+  /* Menu lateral com nome do servidores e status, definição do tamanho do menu e bordas */
 .aside_stats{
 	width: 20.2%;
 	min-height: 1vmax;
 	margin: 0 5%;
 	border-bottom: none;
-	border-bottom-left-radius: 0;
-	border-bottom-right-radius: 0;
 }
-
+/* Tamanho da largura da caixa dentro dos menu lateral */
 .aside_stats div{
 	width: 100%;
 	height: max-content;
 }
 
+/* Definição do Titulo dos menus laterais */
 .aside_stats h4{
 	width: 100%;
 	margin: 2% auto;
 	padding: 2% 0;
 }
 
+/* Espaçamento entro o nome do servidores e status do mesmo */
 .aside_stats h4 em{
 	margin-left: 5%;
 }
 
+/* Menu lateral inferior, contem rank de players com maiores níveis registrados, definição do comprimento do menu */
 .aside_rank{
 	width: 30.2%;
 	margin-top: 0;
 }
 
+/* Tamanho da caixa que comporta dentro do aside */
 .ranking_aside {
 	border-collapse: collapse;
 	width: 100%;
   }
   
+  /* Definição do titulo da tabela de rank */
   .ranking_aside th{
 	  color: #ffb300;
 	  text-align: left;
 	  padding: 2%;
   }
   
+  /* Definir texto de níveis ao lade esquerdo */
   .lvl_aside{
 	  text-align: right !important;
   }
   
+  /* Definição de estilo e espaçamento da tabela */
   .ranking_aside td{
 	  padding: 2%;
 	  text-align: left;
 	  border-bottom: 1px solid #ddd;
   }
-  
-  .ranking_aside td:hover{
-	  border-bottom: none;
-  }
-  
+
+/* Efeito de transação ao passar o mouse na tabela de rank */
   .ranking_aside tr:hover {
 	  background: #fff;
 	  color: #ffb300;
@@ -356,26 +348,26 @@ div.text{
 	  -ms-transition: all .2s ease-out;
 	  transition: all .2s ease-out;
   }
-  .ranking_aside tr:active{
-	  background-color: #ddd;
-  }
 
+  /* Remover efeito ao passar o mouse no titulo da tabela */
 .top_table:hover{
 	  cursor: default !important;
 	  background: none !important;
 	  border: none !important;
 }
-  
+
 .top_table:active{
 	  background: none !important;
 	  border: none !important;
   }
 
+/* Tamanho do menu que contem notícias na página ínicial */
 .aside_news{
 	width: 99%;
 	min-height: 1vmax;
 }
 
+/* Definição da cx que comporta as o feed de noticias */
 .feeds{
 	border: rgba(214, 167, 14, 0.671) solid 2px;
 	width: 70%;
@@ -387,41 +379,49 @@ div.text{
 	margin-bottom: 2%;
 }
 
+/* Alinhamento de titulo */
 .feeds h3{
 	text-align: left;
 }
 
+/* Diminuir tamanho da fonte que contem o num da ver do feed*/
 .feeds h3 em{
 	font-size: 1.5rem;
 }
 
+/* Definição do texto de conteudo do feed de noticiais */
 .feeds h4{
 	font-size: 1.2rem;
 	text-align: left;
 	color: rgba(0, 0, 0, 0.541);
 }
 
+/* Ajustar tamanhod da cx de img e alinhar img do feed ao centro */
 .feeds div{
 	width: 100%;
 	margin: 1% 10%;
 }
 
+/* Definições da img do feed */
 .feeds img{
 	width: 75%;
 	height: 300px;
 }
 
+/* Definir cor e alinhamento do conteúdo do feed */
 .feeds p{
 	color: #000;
 	margin: 2%;
 	text-align: left;
 }
 
+/* Definir tamanho do rodape */
 footer{
 	width: 99%;
 	min-height: 1vmax;
 }
 
+/* Definições do titulo do rodape */
 footer h2{
 	text-align: right;
 	font-size: 4.2rem;
@@ -429,11 +429,13 @@ footer h2{
 	margin: 1.5% 1.5% 0 0;
 }
 
+/* Alinhar redes sociais */
 .redes_sociais{
 	float: left;
 	min-height: 130px;
 }
 
+/* Definições do titulo da redes sociais  */
 .redes_sociais h3{
 	font-size: 1.4rem;
 	color: #ffb300;
@@ -442,15 +444,12 @@ footer h2{
 	width: 100%;
 }
 
-.redes_sociais ul{
-	list-style-type: none;
-}
-
 .redes_sociais li{
 	float: left;
 	padding: 15px 60px;
 }
 
+/* Definições da img da redes sociais */
 .redes_sociais li a img{
 	width: 100%;
 	height: 100%;
@@ -458,6 +457,7 @@ footer h2{
 	cursor: pointer;
 }
 
+/* Efeito de reflexo ao passar o mouse nas img das redes sociais */
 .test-shine {
   width: 80px;
   height: 80px;
@@ -487,7 +487,7 @@ footer h2{
   );
 }
 
-/* Hover state - trigger effect */
+/* Estado de pairar - efeito de gatilho */
 .test-shine:hover:after{
   opacity: 1;
   left: 130%;
@@ -496,7 +496,7 @@ footer h2{
   transition-timing-function: ease;
 }
 
-/* Active state */
+/* Estado ativo */
 .test-shine:active:after {
   opacity: 0;
 }
