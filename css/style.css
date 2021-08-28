@@ -279,6 +279,22 @@ div.text{
 	.prev, .next,.text {font-size: 11px}
   }
 
+  /* Menu de Login */
+  .main_login{
+	  width: 98.7%;
+  }
+
+  .main_login input label{
+	  margin: 10% 0;
+  }
+
+  .form_login button{
+	 border: none; 
+
+	 color: #CCF2FA;
+	 padding: 0.5% 1%;
+  }
+
   /* Menu lateral com nome do servidores e status, definição do tamanho do menu e bordas */
 .aside_stats{
 	width: 20.2%;
