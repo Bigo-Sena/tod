@@ -13,6 +13,7 @@
     <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
     <link rel="stylesheet" type="text/css" href="css/style.css">
     <link rel="stylesheet" type="text/css" href="css/nav.css">
+    <script src="https://kit.fontawesome.com/7f4a8e5abf.js" crossorigin="anonymous"></script>
 </head>
 <body>
     <!-- conteiner que compoem todo site dentro   -->
@@ -39,7 +40,78 @@
                     <input type="checkbox" id="drop-1"/>
                     <ul>
                         <li><a class="link_menu" href="#">Meu Perfil</a></li>
-                        <li><a class="link_menu" href="login.html">Login</a></li>
+                        <li><a data-modal-target="modal1" class="link_menu">Login</a></li>
+
+                        <div class="modal" id="modal1">
+                            <div class="modal-content">
+                              <span class="modal-close">&times;</span>
+                              <div class="container" id="container">
+                                <div class="content1  sign-in-container"> 
+                                    <form class="login">
+                                        <h3 class="tituloForm1">Login</h3>
+                                        <hr>
+                                        <p class="texto">Entre com:</p>
+                                        <div class="socialMedia">
+                                            <a  class="icone4" href="#"><i class="fab fa-google-plus-g"></i></a>
+                                            <a class="icone5" href="#"><i class="fab fa-facebook-f"></i></a>
+                                        </div>
+                                        <p class="texto">Ou faça o login com os dados criados aqui</p>
+                                        <label class="label-input">
+                                            <i class="far fa-envelope icon-modificado"></i>
+                                            <input type="email" placeholder="E-mail">
+                                        </label>
+                                        <label class="label-input">
+                                            <i class="fas fa-lock icon-modificado"></i>
+                                            <input type="password" placeholder="Senha">
+                                        </label>
+                                        
+                                        <a class="esqueciSenha" href="#">Esqueci a senha</a>
+                                        <button class="btn btnLogin1">Entrar</button>
+                                    </form>
+                                </div> 
+                                <div class="content1 sign-up-container"> 
+                                    <form class="login">
+                                        <h3 class="tituloForm2">Crie sua Conta</h3> 
+                                        <hr>
+                                        <p class="texto">Entre com:</p>
+                                        <div class="socialMedia">
+                                            <a class="icone1" href="#"><i class="fab fa-google-plus-g"></i></a>
+                                            <a class="icone2" href="#"><i class="fab fa-facebook-f"></i></a>
+                                        </div>
+                                        <p class="texto">Ou crie use seu e-mail para se cadastrar</p>
+                                        <label class="label-input">
+                                            <i class="far fa-envelope icon-modificado"></i>
+                                            <input type="email" placeholder="E-mail">
+                                        </label>
+                                        <label class="label-input">
+                                            <i class="fas fa-lock icon-modificado"></i>
+                                            <input type="password" placeholder="Senha">
+                                        </label>
+                                        <label class="label-input">
+                                            <i class="fas fa-lock icon-modificado"></i>
+                                            <input type="password" placeholder="Confirme sua Senha">
+                                        </label>
+                                        <button class="btn btnCadastro1">Cadastro</button>
+                                    </form>
+                                </div>  
+                                
+                                <div class="overlay-container">
+                                    <div class="overlay">
+                                        <div class="content2 contentEsq">
+                                         <h2 class="tituloInform">Bem vindo, novamente!</h2>
+                                            <p class="texto2">Se você ja tem uma conta faça o seu login</p>
+                                            <button class="btn2 btnLogin2" id="signIn">Entrar</button>
+                                        </div>
+                                        <div class="content2 contentDir">
+                                            <h2 class="tituloInform">Olá, novo Amigo</h2>
+                                            <p class="texto2">Cadastre-se com seu e-mail para se juntar a nós</p>
+                                            <button class="btn2 btnCadastro2" id="signUp"></span>Cadastro</span></button>
+                                        </div>
+                                   </div>
+                                </div>
+                            </div>
+                            </div>
+                          </div>
                         <li><a class="link_menu" href="#">Criar Conta</a></li>
                         <li><a class="link_menu" href="#">Sair</a></li>
                     </ul> 
@@ -254,5 +326,6 @@
         </footer>
     </div>
     <script type="text/javascript" src="js/script.js"></script>
+    <script type="text/javascript" src="js/js-formulario.js"></script>
 </body>
 </html>

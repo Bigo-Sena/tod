@@ -503,14 +503,11 @@ button:focus{
 }
 .modal-content {
   position: relative;
-  background-color: #fff;
   margin: 2rem;
   padding: 2rem;
-  border-radius: 0.25rem;
   width: 50%;
   max-height: 75%;
   overflow: auto;
-  box-shadow: 0 4px 20px rgba(0,0,0,0.4);
 }
 .modal.modal-show .modal-content {
   animation: fadeInDown 0.3s ease-in-out forwards;
@@ -533,12 +530,12 @@ button:focus{
   font-size: 1.75rem;
   font-weight: bold;
   padding: 0 0.75rem;
-  color: rgba(0,0,0,0.2);
+  color: rgba(255, 255, 255,);
   cursor: pointer;
   user-select: none;
 }
 .modal-close:hover, .modal-close:focus {
-  color: rgba(0,0,0,0.5);
+  color: #ffb300;
 }
 
 
