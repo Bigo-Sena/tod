@@ -212,13 +212,7 @@ div.text{
   }
 
   /* Menu de Login */
-  .main_login{
-	  width: 98.7%;
-  }
-
-  @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100;300;600&display=swap');
-  @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100;300;600&display=swap');
-.container{
+  .container{
     position: relative;
     background:rgba(102, 102, 102, 0.1);
 
@@ -232,7 +226,7 @@ div.text{
 }
 
 .content1 form {
-    background: rgba(255,255,255,0.1);
+    background: rgba(0,0,0,0.6);
     border-top: 1px solid rgba(255,255,255,0.1);
     border-left: 1px solid rgba(255,255,255,0.1);
     backdrop-filter: blur(5px);
@@ -325,13 +319,13 @@ button:focus{
 }
  .btn2{
     background: white;
-    color: #ffbf00;
+    color: #000;
 }
 
 .btn2:hover{
     border: 1px solid white;
     background: #ffbf00;
-    box-shadow: 20px 20px 50px rgba(0,0,0,0.5);
+    box-shadow: 5px 5px 30px rgba(255, 255, 255, 0.5);
     color: white;
 }
 
@@ -367,7 +361,7 @@ button:focus{
 }
 
 .overlay{
-    background: #ffbf00;
+    background: #111;
 	color:white;
 	position: relative;
 	left: -100%;
@@ -476,7 +470,7 @@ button:focus{
     position:absolute;
 }
 
-@keyframes show {
+/* @keyframes show {
 	0%, 49.99% {
 	opacity: 0;
 	z-index: 1;
@@ -485,7 +479,7 @@ button:focus{
 50%, 100% {
 	opacity: 1;
 	z-index: 5;
-}
+} */
 
 /* Menu lateral com nome do servidores e status, definição do tamanho do menu e bordas */
 .aside_stats{
