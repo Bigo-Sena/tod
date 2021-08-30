@@ -668,8 +668,7 @@ button:focus{
 .aside_stats{
 	width: 20.2%;
 	min-height: 1vmax;
-	margin: 0 5%;
-	border-bottom: none;
+	margin: 0.5% 5%;
 }
 /* Tamanho da largura da caixa dentro dos menu lateral */
 .aside_stats div{
