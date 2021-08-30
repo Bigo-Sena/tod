@@ -1,5 +1,7 @@
 @charset "utf-8";
 /*CSS Document*/
+
+/* Definição padrão de estilo de conteúdo */
 *{
 	margin: 0;
 	padding: 0;
@@ -9,7 +11,41 @@
   box-sizing: border-box;
 }
 
+/* Alinhamento padrão de img */
+
 img {vertical-align: middle;}
+
+/* Estilo padrão de todo o conteúdo */
+button{
+  border-radius: 20px;
+  border: 1px solid  white;
+  background:  #ffbf00;
+  font-weight: bold;
+  padding: 12px 45px;
+  letter-spacing: 1PX;
+  text-transform: uppercase;
+  transition:  580ms ease-in;
+  color:white;
+ cursor:pointer;
+ max-width: 100%;
+ min-width: 15%;
+}
+
+button:hover {
+ transition: all 580ms ease-in-out;
+box-shadow: 20px 20px 50px rgba(0,0,0,0.5);
+background: rgba(255,255,255,0.1);
+color:#ffbf00;
+border:rgba(255,255,255,0.1);
+}
+
+button:active{
+  transform: scale(0.5);
+}
+
+button:focus{
+  outline: none;
+}
 
 h3{
 	font-size: 2rem;
@@ -56,6 +92,15 @@ a:after {
   background: transparent;
 }
 
+main, aside, footer{
+	border: 2px black solid;
+	background-color: rgba(0,0,0,0.7);
+	margin: 0.5% 0.5% 0.5% 0.5%;
+	padding: 0.5%;
+	display: inline-block;
+	border-radius: 2%;
+}
+
 /* Estrutura principal da pagina */
 
 html{height: 100%;}
@@ -74,13 +119,14 @@ body{
 	word-wrap:break-word !important;
 }
 
+/* Conteiner principal que engloba todo o conteúdo */
 #primary-conteiner{
 	width: 100%;
 	max-width: 1920px;
 	margin: auto;
 }
 
-/* Cabeçalho da página */
+/* Definições do cabeçalho da página */
 header{
 	width: 100%;
 	height: 8rem;
@@ -104,20 +150,16 @@ header h1 {
 header h1 em{
 	color:#a3db0a; 
 }
-main, aside, footer{
-	border: 2px black solid;
-	background-color: rgba(0,0,0,0.7);
-	margin: 0.5% 0.5% 0.5% 0.5%;
-	padding: 0.5%;
-	display: inline-block;
-	border-radius: 2%;
-}
+
+/* Definição do conteúdo principal e de ínicio da página */
+
 main{
 	float: left;
 	width: 67.8%;
 	min-height: 1vmax;
 }
 
+/* Definição de slideshow que apresenta na página inicial */
 .mySlides {
 	display: none;
 }
@@ -223,6 +265,7 @@ div.text{
     min-height: 480px;
 }
 
+/* Conteúdo da página de login, definição de estilo, efeito e transição */
 .content1 form {
     background: rgba(0,0,0,0.6);
     border-top: 1px solid rgba(255,255,255,0.1);
@@ -285,37 +328,7 @@ input:-webkit-autofill{
     -webkit-tex-fill-color: #000 !important;
 }
 
-button{
-    border-radius: 20px;
-    border: 1px solid  white;
-    background:  #ffbf00;
-    font-weight: bold;
-    padding: 12px 45px;
-    letter-spacing: 1PX;
-    text-transform: uppercase;
-    transition:  580ms ease-in;
-    color:white;
-   cursor:pointer;
-   max-width: 100%;
-   min-width: 15%;
-}
-
-button:hover {
-   transition: all 580ms ease-in-out;
-  box-shadow: 20px 20px 50px rgba(0,0,0,0.5);
-  background: rgba(255,255,255,0.1);
-  color:#ffbf00;
-  border:rgba(255,255,255,0.1);
-}
-
-button:active{
-    transform: scale(0.5);
-}
-
-button:focus{
-    outline: none;
-}
- .btn2{
+.btn2{
     background: white;
     color: #000;
 }
@@ -359,7 +372,7 @@ button:focus{
 }
 
 .overlay{
-    background: #111;
+  background: #111;
 	color:white;
 	position: relative;
 	left: -100%;
@@ -479,7 +492,7 @@ button:focus{
 	z-index: 5;
 } */
 
-/* Modals */
+/* Modal usado como principal para conteúdo no site */
 .modal {
   position: fixed;
   left: 0;
@@ -626,13 +639,14 @@ button:focus{
   .modal-content h1 { margin-bottom: 1.5rem; }
 }
 
-/*Ini.Down*/
+/*Ini.Download-jogo*/
 
+/* Definir tamanho da tela e centralizar conteúdo */
 .main_fullsize{
-	width: 100%;
+	width: 98%;
 	max-width: 1920px;
     min-height: 1vmax;
-	margin: auto;
+	margin: 0 1%;
 }
 
 .download-jogo{
@@ -641,12 +655,14 @@ button:focus{
     text-align: center;
 }
 
+/* Definir tamanho e espaçamento de botões de download */
 .btn-download{
     padding: 2% 5%;
     text-align: center;
     margin: 0.5% 2%;
 }
 
+/* Definir tamanho da tabela, centralizar conteúdo e definir bordas */
 .table-requirements{
     float: left;
     width: 45%;

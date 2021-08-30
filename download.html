@@ -17,6 +17,144 @@
 </head>
 <body>
     <div id="primary-conteiner">
+         <!-- cabecalho do site -->
+         <header>
+            <h1><em>Tree</em>of Destiny</h1>
+        </header>
+
+        <!-- menu do site, o menu pode mudar dependendo da resolucao -->
+        <div class="nav-toggle"></div>
+            <div class="nav-toggle-bar "></div>
+        <div class="nav-toggle-bar"></div>
+        <nav id="menu">
+            <label for="drop" class="toggle">Menu</label>
+            <input type="checkbox" id="drop" />
+            <ul class="menu">
+                <li><a class="link_menu" href="index.html">Home</a></li>
+                <li>
+                    <!-- First Tier Drop Down -->
+                    <label for="drop-1" class="toggle">Minha Conta</label>
+                    <a class="link_menu">Minha Conta</a>
+                    <input type="checkbox" id="drop-1"/>
+                    <ul>
+                        <li><a class="link_menu" href="#">Meu Perfil</a></li>
+                        <li><a data-modal-target="modal1" class="link_menu">Login</a></li>
+
+                        <div class="modal" id="modal1">
+                            <div class="modal-content">
+                              <span class="modal-close">&times;</span>
+                              <div class="container" id="container">
+                                <div class="content1  sign-in-container"> 
+                                    <form class="login">
+                                        <h3 class="tituloForm1">Login</h3>
+                                        <hr>
+                                        <p class="texto">Entre com:</p>
+                                        <div class="socialMedia">
+                                            <a  class="icone4" href="#"><i class="fab fa-google-plus-g"></i></a>
+                                            <a class="icone5" href="#"><i class="fab fa-facebook-f"></i></a>
+                                        </div>
+                                        <p class="texto">Ou faça o login com os dados criados aqui</p>
+                                        <label class="label-input">
+                                            <i class="far fa-envelope icon-modificado"></i>
+                                            <input type="email" placeholder="E-mail">
+                                        </label>
+                                        <label class="label-input">
+                                            <i class="fas fa-lock icon-modificado"></i>
+                                            <input type="password" placeholder="Senha">
+                                        </label>
+                                        
+                                        <a class="esqueciSenha" href="#">Esqueci a senha</a>
+                                        <button style="margin-top: 4%;" class="btn btnLogin1">Entrar</button>
+                                    </form>
+                                </div> 
+                                <div class="content1 sign-up-container"> 
+                                    <form class="login">
+                                        <h3 class="tituloForm2">Crie sua Conta</h3> 
+                                        <hr>
+                                        <p class="texto">Entre com:</p>
+                                        <div class="socialMedia">
+                                            <a class="icone1" href="#"><i class="fab fa-google-plus-g"></i></a>
+                                            <a class="icone2" href="#"><i class="fab fa-facebook-f"></i></a>
+                                        </div>
+                                        <p class="texto">Ou crie use seu e-mail para se cadastrar</p>
+                                        <label class="label-input">
+                                            <i class="far fa-envelope icon-modificado"></i>
+                                            <input type="email" placeholder="E-mail">
+                                        </label>
+                                        <label class="label-input">
+                                            <i class="fas fa-lock icon-modificado"></i>
+                                            <input type="password" placeholder="Senha">
+                                        </label>
+                                        <label class="label-input">
+                                            <i class="fas fa-lock icon-modificado"></i>
+                                            <input type="password" placeholder="Confirme sua Senha">
+                                        </label>
+                                        <button class="btn btnCadastro1">Cadastro</button>
+                                    </form>
+                                </div>  
+                                
+                                <div class="overlay-container">
+                                    <div class="overlay">
+                                        <div class="content2 contentEsq">
+                                         <h2 class="tituloInform">Bem vindo, novamente!</h2>
+                                            <p class="texto2">Se você ja tem uma conta faça o seu login</p>
+                                            <button class="btn2 btnLogin2" id="signIn">Entrar</button>
+                                        </div>
+                                        <div class="content2 contentDir">
+                                            <h2 class="tituloInform">Olá, novo aventureiro</h2>
+                                            <p class="texto2">Cadastre-se com seu e-mail para se juntar a nós</p>
+                                            <button class="btn2 btnCadastro2" id="signUp"></span>Cadastro</span></button>
+                                        </div>
+                                   </div>
+                                </div>
+                            </div>
+                            </div>
+                          </div>
+                        <li><a class="link_menu" href="#">Criar Conta</a></li>
+                        <li><a class="link_menu" href="#">Sair</a></li>
+                    </ul> 
+                </li>
+
+                <li>
+                    <label for="drop-2" class="toggle">Guias</label>
+                    <a class="link_menu">Guias</a>
+                    <input type="checkbox" id="drop-2"/>
+                    <ul>
+                        <li><a class="link_menu" href="#">O que é ToD?</a></li>
+                        <li><a class="link_menu"href="#">História</a></li>
+                        <li><a class="link_menu"href="#">Iniciantes</a></li>
+                        <li><a class="link_menu"href="#">Prós</a></li>
+                    </ul>
+                </li>
+
+                <li><a class="link_menu" href="#">Ranking</a></li>
+
+                <li>
+                    <label for="drop-2" class="toggle">Novidades</label>
+                    <a class="link_menu">Novidades</a>
+                    <input type="checkbox" id="drop-2"/>
+                    <ul>
+                        <li><a class="link_menu" href="#">Updates</a></li>
+                        <li><a class="link_menu"href="#">Promoções</a></li>
+                        <li><a class="link_menu"href="#">Eventos</a></li>
+                    </ul>
+                </li>
+
+                <li>
+                    <label for="drop-2" class="toggle">Downloads</label>
+                    <a class="link_menu">Downloads</a>
+                    <input type="checkbox" id="drop-2"/>
+                    <ul>
+                        <li><a class="link_menu" href="download.html">jogo</a></li>
+                        <li><a class="link_menu"href="#">Galeria</a></li>
+                    </ul>
+                </li>
+
+                <li><a class="link_menu" href="slider.html">Loja</a></li>
+                <li><a class="link_menu" href="#">Sobre nós</a></li>
+                <li><a class="link_menu" href="#">Fórum</a></li>
+            </ul>
+        </nav>
         <main class="main_fullsize">
             <br>
             <h3> Download do jogo</h3>
@@ -75,6 +213,35 @@
                 </tr>
             </table>
         </main>
+        <!-- rodape do site -->
+        <footer>
+            <div class="redes_sociais">
+                <h3>Siga-nos nas redes sociais</h3>
+                <ul>
+                    <li style="padding-left: 0;">
+                        <a target="blank" href="#">
+                            <div class="test-shine"><img src="img/facebook_logo.png"></div>
+                        </a>
+                    </li>
+                    <li>
+                        <a target="blank" href="">
+                            <div class="test-shine"><img src="img/youtube_logo.png"></div>
+                        </a>
+                    </li>
+                    <li>
+                        <a target="blank" href="">
+                            <div class="test-shine"><img src="img/instagram_logo.png"></div>
+                        </a>
+                    </li>
+                    <li style="padding-right: 0;">
+                        <a target="blank" href="">
+                            <div class="test-shine"><img src="img/twitter_logo.png"></div>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+            <h2>Sena Games</h2>
+        </footer>
     </div>
 </body>
 
