@@ -16,80 +16,67 @@
     <script src="https://kit.fontawesome.com/7f4a8e5abf.js" crossorigin="anonymous"></script>
 </head>
 <body>
-    <main>
-        <fieldset id="mainJogo">
-        <h1 class="h1p"> Faça download do jogo</h1>
-        <hr style="position: relative; top: 10px;">
-        <br>
-
-        <div id="download">
-            <h2 class="h2p"> Sistema Operacional</h2>
+    <div id="primary-conteiner">
+        <main class="main_fullsize">
             <br>
-            <div class="caixa">
-                <div class="botao">
-                    <input onclick='alert("O jogo ainda não esta disponivel :P")' type="button" class="button" value="DOWNLOAD">
-                    <p> Windows 7/8/8.1/10 </p>
-                </div>
+            <h3> Download do jogo</h3>
+            <hr>
+            <div class="download-jogo">
+                <h4> Sistemas Operacionais</h4>
                 <br>
-                <div class="botao1">
-                    <input onclick='alert("O jogo ainda não esta disponivel :P")' type="button" class="button1" value="DOWNLOAD">
-                    <p> Mac OS X v10.5 ~ v10.13 </p>
-                </div>
+                <button class="btn-download" onclick='alert("O jogo ainda não esta disponivel :P")'>
+                    Windows <i class="fab fa-windows"></i></button>
+                        
+                <button class="btn-download" onclick='alert("O jogo ainda não esta disponivel :P")'>
+                    Mac OS <i class="fab fa-apple"></i></button>
+
+                <button class="btn-download" onclick='alert("O jogo ainda não esta disponivel :P")'>
+                    Linux <i class="fab fa-linux"></i></button>
             </div>
-        </div>
 
-        <div id="table1">
-            <table>
-                <caption> Requisitos mínimos </caption>
-
+            <table class="table-requirements">
+                <th> Requisitos mínimos </th>
                 <tr>
-                    <th>Sistema operacional</td>
+                    <td>Sistema operacional</td>
                     <td>Windows 7 64 bits ou superior / Mac OS X Sierra ou superior</td>
                 </tr>
-
                 <tr>
-                    <th>Processador</td>
+                    <td>Processador</td>
                     <td>Core i3 2.4 Ghz ou superior</td>
                 </tr>
-
                 <tr>
-                    <th>Placa de vídeo</td>
+                    <td>Placa de vídeo</td>
                     <td>Intel HD Graphics 4000 ou superior</td>
                 </tr>
-
                 <tr>
-                    <th>Memória RAM</td>
+                    <td>Memória RAM</td>
                     <td>4 GB de RAM</td>
                 </tr>
-                  
+                
             </table>
-        </div>
 
-
-        <div id="table2">
-            <table>
-                <caption> Requisitos recomendados </caption>
+            <table class="table-requirements">
+                <th> Requisitos recomendados </th>
                 <tr>
                     <td>Sistema operacional</td>
                     <td>Windows 7 64 bit ou superior</td>
                 </tr>
-
                 <tr>
                     <td>Processador</td>
                     <td>Core i5 2.8 Ghz ou superior</td>
                 </tr>
-
                 <tr>
                     <td>Placa de vídeo</td>
                     <td>NVidia GTX 660, AMD Radeon HD 7870 ou superior</td>
                 </tr>
-
                 <tr>
                     <td>Memória RAM</td>
                     <td>8 GB</td>
                 </tr>
-            </table>   
-        </div>
-        </fieldset>
-    </main>
+            </table>
+        </main>
+    </div>
 </body>
+
+<script type="text/javascript" src="js/script.js"></script>
+<script type="text/javascript" src="js/js-formulario.js"></script>

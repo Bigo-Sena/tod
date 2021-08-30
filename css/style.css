@@ -74,7 +74,7 @@ body{
 	word-wrap:break-word !important;
 }
 
-#fullconteiner{
+#primary-conteiner{
 	width: 100%;
 	max-width: 1920px;
 	margin: auto;
@@ -296,6 +296,8 @@ button{
     transition:  580ms ease-in;
     color:white;
    cursor:pointer;
+   max-width: 100%;
+   min-width: 15%;
 }
 
 button:hover {
@@ -622,6 +624,44 @@ button:focus{
   html { font-size: 12px; }
   .modal-content { padding: 2rem 1rem 1rem 1rem; width: 90%; }
   .modal-content h1 { margin-bottom: 1.5rem; }
+}
+
+/*Ini.Down*/
+
+.main_fullsize{
+	width: 100%;
+	max-width: 1920px;
+    min-height: 1vmax;
+	margin: auto;
+}
+
+.download-jogo{
+	width: 100%;
+    margin: auto;
+    text-align: center;
+}
+
+.btn-download{
+    padding: 2% 5%;
+    text-align: center;
+    margin: 0.5% 2%;
+}
+
+.table-requirements{
+    float: left;
+    width: 45%;
+    margin: 1% 2%;
+}
+
+.table-requirements td{
+    padding: 1%;
+	  text-align: left;
+	  border: 1px solid #ddd;
+}
+
+.table-requirements th{
+    color: #ffb300;
+    font-size: 1.2rem;
 }
 
 /* Menu lateral com nome do servidores e status, definição do tamanho do menu e bordas */
