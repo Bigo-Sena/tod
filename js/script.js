@@ -30,7 +30,7 @@ function toggleModal(modalId) {
     setTimeout(() => {
       document.body.style.overflow = "initial";
       modal.classList.remove("modal-show", "modal-hide");
-      modal.style.display = "none";      
+      modal.style.display = "none";
     }, 200);
   }
   else {

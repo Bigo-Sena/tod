@@ -295,7 +295,7 @@ main span.dot {
     backdrop-filter: blur(5px);
     display: flex;
     flex-direction: column;
-    padding: 0 50px;
+    padding: 0 10%;
     height: 100%;
     min-width: 1vmax;
     justify-content: center;
@@ -323,15 +323,13 @@ main span.dot {
     color: white;
 }
 form input{
-    height:40px;
+    height: 3rem;
     width:100%;
     border:none;
     background-color: #ecf0f1;
-	color: #000;
-}
-
-input{
-    border-radius: 5px;
+	  color: #000;
+    border-radius: 100px;
+    outline: none;
 }
 
 .label-input{
@@ -339,7 +337,8 @@ input{
     display: flex;
     align-items: center;
     margin:8px;
-    border-radius: 10px;
+    border-radius: 100px;
+    border: none;
 }
 
 .icon-modificado{
@@ -414,7 +413,7 @@ input:-webkit-autofill{
     flex-direction:column;
     justify-content: center;
     align-items: center;
-    padding: 0 40px;
+    padding: 0 10%;
     height: 100%;
     width: 50%;
     text-align: center;
@@ -539,7 +538,7 @@ input:-webkit-autofill{
 .modal-content {
   position: fixed;
   margin: 5%;
-  padding: 2%;
+  padding: 2rem;
   min-width: 1vmax;
   max-height: 100vmax;
   overflow: auto;
@@ -573,7 +572,6 @@ input:-webkit-autofill{
 .modal-close:hover, .modal-close:focus {
   color: #ffb300;
 }
-
 
 /* Animations */
 @keyframes fadeIn {
@@ -655,11 +653,12 @@ input:-webkit-autofill{
 
 /* Responsiveness */
 @media(max-width: 992px) {
-  html { font-size: 14px; }
+  html { font-size: 0.8rem; }
   .modal-content { width: 80%; }
+  .btn2, .btn{ font-size: 0.8rem; width: 100%; padding: 10%;}
 }
 @media(max-width:767px) {
-  html { font-size: 12px; }
+  html { font-size: 0.7rem; }
   .modal-content { padding: 2rem 1rem 1rem 1rem; width: 90%; }
   .modal-content h1 { margin-bottom: 1.5rem; }
 }
