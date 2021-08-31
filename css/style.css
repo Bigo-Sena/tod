@@ -11,6 +11,32 @@
   box-sizing: border-box;
 }
 
+@media screen and (max-width: 768px) {
+  *{
+    font-size: 0.8rem;
+  }
+
+  h3{
+    font-size: 1.6rem !important;
+  }
+  h4{
+    font-size: 1.1rem !important;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  *{
+    font-size: 0.5rem;
+  }
+
+  h3{
+    font-size: 1.2rem !important;
+  }
+  h4{
+    font-size: 0.8rem !important;
+  }
+}
+
 /* Alinhamento padrão de img */
 
 img {vertical-align: middle;}
@@ -187,9 +213,18 @@ main{
   }
 main div.slideshow-container div.mySlides img{
 	  margin: auto;
-	  height: 580px;
+	  min-height: 600px;
 	  width: 100%;
 	  vertical-align: middle;
+  }
+
+  /* Diminuição do tamanho da img em telas menores */
+  @media screen and (max-width: 768px) {
+    main div.slideshow-container div.mySlides img{ min-height: 400px}
+  }
+
+  @media screen and (max-width: 600px) {
+    main div.slideshow-container div.mySlides img{ min-height: 40vmax}
   }
   
 main span.dot {
@@ -794,7 +829,7 @@ input:-webkit-autofill{
 .feeds{
 	border: rgba(214, 167, 14, 0.671) solid 2px;
 	width: 70%;
-	height: 600px;
+	height: max-content;
 	margin: auto;
 	border-radius: 8%;
 	background-color: #fff;
@@ -828,7 +863,7 @@ input:-webkit-autofill{
 /* Definições da img do feed */
 .feeds img{
 	width: 75%;
-	height: 300px;
+	min-height: 1vmax;
 }
 
 /* Definir cor e alinhamento do conteúdo do feed */
@@ -844,37 +879,43 @@ footer{
 	min-height: 1vmax;
 }
 
-/* Definições do titulo do rodape */
-footer h2{
+/* Definições do titulo do rodape, sem utilização no momento */
+/* footer h2{
 	text-align: right;
-	font-size: 4.2rem;
+	font-size: 3rem;
 	color: #ffb300;
 	margin: 1.5% 1.5% 0 0;
 }
 
+@media screen and (max-width: 500px){
+  footer h2{
+    display: none;
+  } */
+
 /* Alinhar redes sociais */
 .redes_sociais{
-	float: left;
-	min-height: 130px;
+	height: 130px;
+  width: 100%;
 }
 
 /* Definições do titulo da redes sociais  */
 .redes_sociais h3{
 	font-size: 1.4rem;
 	color: #ffb300;
-	text-align: center;
-	margin: 0 10%;
+	text-align: left;
+	margin: 0 1%;
 	width: 100%;
 }
 
 .redes_sociais li{
 	float: left;
-	padding: 15px 60px;
+	padding: 1rem 4rem;
+  list-style: none;
 }
 
 /* Definições da img da redes sociais */
 .redes_sociais li a img{
-	width: 100%;
+	min-width: 1vmax;
 	height: 100%;
 	border-radius: 50%;
 	cursor: pointer;
