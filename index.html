@@ -18,76 +18,6 @@
 <body>
     <!-- conteiner que compoem todo site dentro   -->
     <div id="primary-conteiner">
-        <div class="modal" id="modal1">
-            <div class="modal-content">
-              <span class="modal-close">&times;</span>
-              <div class="container" id="container">
-                <div class="content1  sign-in-container"> 
-                    <form class="login">
-                        <h3 class="tituloForm1">Login</h3>
-                        <hr>
-                        <p class="texto">Entre com:</p>
-                        <div class="socialMedia">
-                            <a href="#"><i class="fab fa-google-plus-g"></i></a>
-                            <a href="#"><i class="fab fa-facebook-f"></i></a>
-                        </div>
-                        <p class="texto">Ou faça o login com os dados criados aqui</p>
-                        <label class="label-input">
-                            <i class="far fa-envelope icon-modificado"></i>
-                            <input type="email" placeholder="E-mail">
-                        </label>
-                        <label class="label-input">
-                            <i class="fas fa-lock icon-modificado"></i>
-                            <input type="password" placeholder="Senha">
-                        </label>
-                        
-                        <a class="esqueciSenha" href="#">Esqueci a senha</a>
-                        <button style="margin-top: 4%;" class="btn btnLogin1">Entrar</button>
-                    </form>
-                </div> 
-                <div class="content1 sign-up-container"> 
-                    <form class="login">
-                        <h3 class="tituloForm2">Crie sua Conta</h3> 
-                        <hr>
-                        <p class="texto">Entre com:</p>
-                        <div class="socialMedia">
-                            <a class="icone1" href="#"><i class="fab fa-google-plus-g"></i></a>
-                            <a class="icone2" href="#"><i class="fab fa-facebook-f"></i></a>
-                        </div>
-                        <p class="texto">Ou crie use seu e-mail para se cadastrar</p>
-                        <label class="label-input">
-                            <i class="far fa-envelope icon-modificado"></i>
-                            <input type="email" placeholder="E-mail">
-                        </label>
-                        <label class="label-input">
-                            <i class="fas fa-lock icon-modificado"></i>
-                            <input type="password" placeholder="Senha">
-                        </label>
-                        <label class="label-input">
-                            <i class="fas fa-lock icon-modificado"></i>
-                            <input type="password" placeholder="Confirme sua Senha">
-                        </label>
-                        <button class="btn btnCadastro1">Cadastro</button>
-                    </form>
-                </div>  
-                
-                <div class="overlay-container">
-                    <div class="overlay">
-                        <div class="content2 contentEsq">
-                         <h2 class="tituloInform">Bem vindo, novamente!</h2>
-                            <p class="texto2">Se você ja tem uma conta faça o seu login</p>
-                            <button class="btn2 btnLogin2" id="signIn">Entrar</button>
-                        </div>
-                        <div class="content2 contentDir">
-                            <h2 class="tituloInform">Olá, novo aventureiro</h2>
-                            <p class="texto2">Cadastre-se com seu e-mail para se juntar a nós</p>
-                            <button class="btn2 btnCadastro2" id="signUp"></span>Cadastro</span></button>
-                        </div>
-                   </div>
-                </div>
-            </div>
-            </div>
-          </div>
 
         <!-- cabecalho do site -->
         <header>
@@ -156,6 +86,80 @@
                 <li><a class="link_menu" href="#">Fórum</a></li>
             </ul>
         </nav>
+
+        <!-- Campo de login, localizado no nav -->
+        <div class="modal" id="modal1">
+            <div class="modal-content">
+                <span class="modal-close">&times;</span>
+
+                <div class="container" id="container">
+                  <div class="content1  sign-in-container"> 
+                      <form class="login">
+                          <h3 class="tituloForm1">Login</h3>
+                          <hr>
+                          <p class="texto">Entre com:</p>
+                          <div class="socialMedia">
+                              <a href="#"><i class="fab fa-google-plus-g"></i></a>
+                              <a href="#"><i class="fab fa-facebook-f"></i></a>
+                          </div>
+                          <p class="texto">Ou faça o login com os dados criados aqui</p>
+                          <label class="label-input">
+                              <i class="far fa-envelope icon-modificado"></i>
+                              <input type="email" placeholder="E-mail">
+                          </label>
+                          <label class="label-input">
+                              <i class="fas fa-lock icon-modificado"></i>
+                              <input type="password" placeholder="Senha">
+                          </label>
+
+                          <a class="esqueciSenha" href="#">Esqueci a senha</a>
+                          <button style="margin-top: 4%;" class="btn btnLogin1">Entrar</button>
+                      </form>
+                  </div> 
+
+                  <div class="content1 sign-up-container"> 
+                      <form class="login">
+                          <h3 class="tituloForm2">Crie sua Conta</h3> 
+                          <hr>
+                          <p class="texto">Entre com:</p>
+                          <div class="socialMedia">
+                              <a class="icone1" href="#"><i class="fab fa-google-plus-g"></i></a>
+                              <a class="icone2" href="#"><i class="fab fa-facebook-f"></i></a>
+                          </div>
+                          <p class="texto">Ou crie use seu e-mail para se cadastrar</p>
+                          <label class="label-input">
+                              <i class="far fa-envelope icon-modificado"></i>
+                              <input type="email" placeholder="E-mail">
+                          </label>
+                          <label class="label-input">
+                              <i class="fas fa-lock icon-modificado"></i>
+                              <input type="password" placeholder="Senha">
+                          </label>
+                          <label class="label-input">
+                              <i class="fas fa-lock icon-modificado"></i>
+                              <input type="password" placeholder="Confirme sua Senha">
+                          </label>
+                          <button class="btn btnCadastro1">Cadastro</button>
+                      </form>
+                  </div>  
+
+                      <div class="overlay-container">
+                        <div class="overlay">
+                          <div class="content2 contentEsq">
+                           <h2 class="tituloInform">Bem vindo, novamente!</h2>
+                              <p class="texto2">Se você ja tem uma conta faça o seu login</p>
+                              <button class="btn2 btnLogin2" id="signIn">Entrar</button>
+                          </div>
+                          <div class="content2 contentDir">
+                              <h2 class="tituloInform">Olá, novo aventureiro</h2>
+                              <p class="texto2">Cadastre-se com seu e-mail para se juntar a nós</p>
+                              <button class="btn2 btnCadastro2" id="signUp"></span>Cadastro</span></button>
+                          </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
 
         <!-- conteudo principal do site -->
         <main>

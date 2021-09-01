@@ -196,7 +196,7 @@ main{
   width: 100%;
 }
 
-/* Slideshow cx */
+/* Definição do conteúdo do Slideshow */
 .slideshow-container {
 	max-width: 100vmax;
 	position: relative;
@@ -232,7 +232,8 @@ main div.slideshow-container div.mySlides img{
   @media screen and (max-width: 600px) {
     main div.slideshow-container div.mySlides img{ min-height: 40vmax}
   }
-  
+
+/* Campo para passar img do slideshow */
 main span.dot {
 	  cursor: pointer;
 	  height: 20px;
@@ -265,9 +266,10 @@ main span.dot {
     overflow-y:scroll;
 }
 
+/* Estilização do scrollbar do texto do slideshow */
 .text::-webkit-scrollbar-track
 {
-	-webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3);
+	box-shadow: inset 0 0 6px rgba(0,0,0,0.3);
 	border-radius: 10px;
 	background-color: rgba(255, 255, 255, 0);
 }
@@ -281,7 +283,7 @@ main span.dot {
 .text::-webkit-scrollbar-thumb
 {
 	border-radius: 10px;
-	-webkit-box-shadow: inset 0 0 6px rgba(0,0,0,.3);
+	box-shadow: inset 0 0 6px rgba(0,0,0,.3);
 	background-color: #555;
 }
 
