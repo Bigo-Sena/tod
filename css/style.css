@@ -192,6 +192,8 @@ main{
 /* Definição de slideshow que apresenta na página inicial */
 .mySlides {
 	display: none;
+  height: 100%;
+  width: 100%;
 }
 
 /* Slideshow cx */
@@ -258,15 +260,9 @@ main span.dot {
     max-height: 28vmax;
     min-width: 0.1vmax;
     text-align: center;
-    position: absolute;
-      right: 0;
-      top: 75%;
+    position:sticky;
     padding: 1%;
-    overflow-y: scroll;
-}
-
-@media screen and (max-width: 768px) {
-  .text{ top: 60%}
+    overflow-y:scroll;
 }
 
 .text::-webkit-scrollbar-track
