@@ -711,6 +711,7 @@ input:-webkit-autofill{
 	max-width: 1920px;
     min-height: 1vmax;
 	margin: 0 1%;
+  padding: 1% 1.5%;
 }
 
 .download-jogo{
@@ -742,6 +743,66 @@ input:-webkit-autofill{
 .table-requirements th{
     color: #ffb300;
     font-size: 1.2rem;
+}
+
+/* definir link de passagem a esquerda da pagina de Guias */
+.arrow-left{
+  float: left;
+}
+
+/* espelhamento da img */
+.arrow-left img{
+  -moz-transform: scaleX(-1);
+  -o-transform: scaleX(-1);
+  -webkit-transform: scaleX(-1);
+  transform: scaleX(-1);
+}
+
+/* definir link de passagem a direita da pagina de Guias */
+.arrow-right{
+  float: right;
+}
+
+
+/* Tamanho da img do link de guias */
+.arrow-left img, .arrow-right img{
+  height: 8rem;
+}
+
+/* Animação ao mover o mouse no link em Guias com efeito swing */
+.arrow-left:hover, .arrow-right:hover{
+-webkit-animation: swing 1s ease;
+animation: swing 1s ease;
+-webkit-animation-iteration-count: 1;
+animation-iteration-count: 1;
+}
+
+@-webkit-keyframes swing
+{
+  15%{
+    -webkit-transform: translateX(5px);
+    transform: translateX(5px);
+  }
+  30%{
+      -webkit-transform: translateX(-5px);
+     transform: translateX(-5px);
+  } 
+  50%{
+    -webkit-transform: translateX(3px);
+    transform: translateX(3px);
+  }
+  65%{
+    -webkit-transform: translateX(-3px);
+    transform: translateX(-3px);
+  }
+  80%{
+    -webkit-transform: translateX(2px);
+    transform: translateX(2px);
+  }
+  100%{
+    -webkit-transform: translateX(0);
+    transform: translateX(0);
+  }
 }
 
 /* Menu lateral com nome do servidores e status, definição do tamanho do menu e bordas */
