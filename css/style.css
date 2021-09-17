@@ -225,6 +225,10 @@ main div.slideshow-container div.mySlides img{
   }
 
   /* Diminuição do tamanho da img em telas menores */
+  @media screen and (max-width: 1024px) {
+    main div.slideshow-container div.mySlides img{ min-height: 500px}
+  }
+
   @media screen and (max-width: 768px) {
     main div.slideshow-container div.mySlides img{ min-height: 400px}
   }
@@ -777,7 +781,7 @@ animation: swing 1s ease;
 animation-iteration-count: 1;
 }
 
-@-webkit-keyframes swing
+@keyframes swing
 {
   15%{
     -webkit-transform: translateX(5px);
@@ -988,20 +992,32 @@ footer{
 
 /* Definições da img da redes sociais */
 .redes_sociais li a img{
-	min-width: 1vmax;
+  width: 100%;
 	height: 100%;
 	border-radius: 50%;
 	cursor: pointer;
 }
 
+
+
 /* Efeito de reflexo ao passar o mouse nas img das redes sociais */
 .test-shine {
-  width: 80px;
+  min-width: 80px;
   height: 80px;
   border-radius: 50%;
   border: 1px solid black;
   position:absolute;
   overflow: hidden;
+}
+
+@media screen and (max-width: 395px) {
+  .test-shine {
+    min-width: 50px;
+    height: 50px;
+  }
+    .redes_sociais li{
+      padding: 1rem 3rem;
+    }
 }
 
 .test-shine:after{
