@@ -1,34 +1,17 @@
 # tod
 Criação de web site responsivo e dinâmico pensando na UI e UX utilizando JQuery, Java Script e PHP
 
-
-
-## Visão geral do site:
-
-<video src="D:\Bigo\workspace\tod\midia\site-geral.mp4"></video>
+*Confira toda o desenvolvimento do site de perto: https://tod-online.000webhostapp.com/*
 
 
 
-## Principaís atualizações
+## Confira o primeiro Wireframe do site:
 
-### Menu de navegação
-
-#### Antigo Menu:
-
-<video src="D:\Bigo\workspace\tod\midia\old-menu.mp4"></video>
-
-#### Novo Menu:
-
-<video src="D:\Bigo\workspace\tod\midia\new-menu.mp4"></video>
+![site](D:\Bigo\workspace\tod\documents\site.jpg)
 
 
 
-### Tela de Login
+## Site atualmente:
 
-#### Antiga tela de login
+![tod-site](D:\Bigo\workspace\tod\documents\tod-site.png)
 
-<video src="D:\Bigo\workspace\tod\midia\old-login.mp4"></video>
-
-#### Nova tela de login
-
-<video src="D:\Bigo\workspace\tod\midia\new-login_clip_1.mp4"></video>
